@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Button, Flex, Heading, HStack, Stack, Text} from '@chakra-ui/react'
+import {Box, Button, Flex, Heading, HStack, Stack, Text,StackProps}  from '@chakra-ui/react'
 import { CheckCircleIcon } from '@chakra-ui/icons'
 
 export const ListItem = (props: StackProps) =>{
@@ -27,7 +27,7 @@ function Pricing() {
                 <Text color="#171923" fontSize='18px' fontWeight='500' mt='8px'>
                     billed just once
                 </Text>
-                <Button colorScheme='purple' size='lg' w='282px' mt='24px' >Get Started</Button>
+                <Button colorScheme='purple' size='lg' w={['200px','200px','282px']} mt='24px' >Get Started</Button>
             </Box> 
             <Box p='60px' fontSize='18px' bg='white'>
                 <Text textAlign='left'>Access these features when you get this pricing package for your business.</Text>

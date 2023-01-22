@@ -1,4 +1,4 @@
-import { HStack, Icon, Text, Box, Stack } from "@chakra-ui/react";
+import { HStack, Icon, Text, Box, Stack, StackProps } from "@chakra-ui/react";
 import React, { ElementType } from "react";
 import {
   HassleFreeIcon,
