@@ -5,7 +5,7 @@ import { CheckCircleIcon } from '@chakra-ui/icons'
 export const ListItem = (props: StackProps) =>{
     const {children,...rest} = props;
     return(
-     <HStack as='li' spacing='5' {...rest}>
+     <HStack as='li' spacing='5' {...rest} alignItems='start'>
         <CheckCircleIcon color='#6B46C1' w='22px' h='22px' />
         <Text textAlign={["left","left","center"]}>{children}</Text>
      </HStack>
@@ -15,7 +15,7 @@ export const ListItem = (props: StackProps) =>{
 function Pricing() {
   return (
     <Box mx='6'>
-        <Box maxW='994px' margin='auto' mt='-256px' borderRadius='12px' overflow='hidden' boxShadow='0px 20px 25px -5px rgba(0,0,0,0.1),0px 10px 10px -5px rgba(0,0,0,0.4)'>
+        <Box maxW='994px' margin='auto' mt='-64' borderRadius='xl' overflow='hidden' boxShadow='0px 20px 25px -5px rgba(0,0,0,0.1),0px 10px 10px -5px rgba(0,0,0,0.4)'>
         <Flex direction={['column','column','row']}>
            <Box bg='#F0EAFB' p='60px' textAlign='center'>
                 <Text fontSize='24px' fontWeight='800'>
@@ -31,7 +31,7 @@ function Pricing() {
             </Box> 
             <Box p='60px' fontSize='18px' bg='white'>
                 <Text textAlign='left'>Access these features when you get this pricing package for your business.</Text>
-                <Stack as='ul' spacing='20px' pt='24px' direction='column'>
+                <Stack as='ul' spacing='5' pt='6' direction='column'>
                     <ListItem>International calling and messaging API</ListItem>
                     <ListItem>Additinal Phone numbers</ListItem>
                     <ListItem>Automated messages via Zapier</ListItem>
