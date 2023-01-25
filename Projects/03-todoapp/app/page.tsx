@@ -1,12 +1,16 @@
-
+import React from "react";
 import AddTodo from './add-todo';
 import ToDoList from './todo-list';
 
-export default function page() {
+function Home() {
   return (
    <div>
+       
+       {/* @ts-ignore */}
     <AddTodo />
     <ToDoList />
    </div>
-  )
+  );
 }
+
+export default Home

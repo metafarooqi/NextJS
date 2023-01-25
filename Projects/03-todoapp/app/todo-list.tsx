@@ -1,28 +1,29 @@
 import Todo from './todo';
 
 const getTodos = async () => {
-    let todos = await fetch("https://json-api-snowy.vercel.app/api/todo/list");
-    return todos.json();    
+    const res = await fetch("https://json-api-snowy.vercel.app/api/todo/list");
+    return res.json();    
 }
 
-export default async function ToDoList() {
+async function ToDoList() {
     const {todos} = await getTodos(); 
-    console.log(todos);
+    //console.log(todos);
   return (
-    <div>
+    <>
+ 
+      <div>
     <ul style={{ listStyleType:"none" }}>
-    {todos.map((t) => {
+    {todos.map((t:any) => {
         return (
             <li key={t.id}>
                <Todo todo={t} />
             </li>
         );
-    })
-    }
-     
-      
-    </ul>
+    })}
+     </ul>
   </div>
+    </>
   )
 }
 
+export default ToDoList

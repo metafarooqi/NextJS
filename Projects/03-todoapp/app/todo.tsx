@@ -2,7 +2,7 @@
 
 import {useRouter} from 'next/navigation'
 
-async function update(id,isDone,refresh){
+async function update(id : string,isDone: boolean,refresh:()=>void){
   await fetch(`/api/todo/update`,{
     method:"POST",
     //mode: 'no-cors',
@@ -11,7 +11,7 @@ async function update(id,isDone,refresh){
   refresh();
 }
 
-async function deleteTodo(id,refresh){
+async function deleteTodo(id:string,refresh:() => void){
   await fetch(`/api/todo/delete?id=${id}`,{
     method:"DELETE",
   });
