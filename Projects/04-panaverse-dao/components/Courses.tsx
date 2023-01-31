@@ -93,20 +93,7 @@ const features: IFeature[] = [
   }
 ];
 
-interface FeatureProps extends StackProps {
-  icon: ElementType;
-}
 
-function CourseIcon(props: FeatureProps) {
-  const { icon, children, ...rest } = props;
-  return (
-      <Icon as={icon} boxSize="12" />
-  );
-}
-
-function GetIcon({icon}){
-  return icon;
-}
 
 const Courses = () => {
   // const ref = useRef(null);
