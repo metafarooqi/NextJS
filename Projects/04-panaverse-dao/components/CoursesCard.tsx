@@ -20,7 +20,7 @@ function CoursesCard({url,title}) {
         whileHover={{ scale: 1.1 }}
       >
         <Box w="full" ref={ref}>
-          <Image src={url}></Image>
+          <Image alt={title} src={url}></Image>
           <Box>
             <Heading>{title}</Heading>
           </Box>

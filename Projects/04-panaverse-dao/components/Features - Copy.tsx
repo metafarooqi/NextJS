@@ -87,7 +87,7 @@ const Features = () => {
           <ScaleFade delay={0.1} initialScale={0.5} in={inViewport} whileHover={{scale:1.1}} key={index}>
 <Box
             key={index}
-            bg={useColorModeValue('white.100', 'white.700')}
+            bg={'white.100'}
             p={6}
             rounded="lg"
             textAlign="center"

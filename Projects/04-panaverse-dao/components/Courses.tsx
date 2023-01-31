@@ -131,11 +131,12 @@ const Courses = () => {
               initial="hidden"
               animate="show"
               whileHover={{ scale: 1.1 }}
+              key={index}
             >
               <Link style={{textDecoration:'none'}} href={feature.link}>
                 <Box
                   key={index}
-                  bg={useColorModeValue("white.100", "white.700")}
+                  bg={"white.100"}
                   p={6}
                   rounded="lg"
                   textAlign="center"

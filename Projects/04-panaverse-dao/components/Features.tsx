@@ -131,11 +131,12 @@ const Features = () => {
               whileHover={{ scale: 1.2 }}
               onHoverStart={(e) => {}}
               onHoverEnd={(e) => {}}
+              key={index}
             >
               <Link href={feature.link} style={{ textDecoration: "none" }}>
                 <Box
                   key={index}
-                  bg={useColorModeValue("white.100", "white.700")}
+                  bg={"white.100"}
                   p={6}
                   rounded="lg"
                   textAlign="center"

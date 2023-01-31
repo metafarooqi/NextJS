@@ -4,7 +4,7 @@ import React from 'react'
 function CourseBanner() {
   return (
     <Box backgroundImage="url('/images/ai.jpg')" backgroundPosition='center'>
-      <Image src="/images/ai.jpg"></Image>
+      <Image src="/images/ai.jpg" alt="Course Banner"></Image>
     </Box>
   );
 }
