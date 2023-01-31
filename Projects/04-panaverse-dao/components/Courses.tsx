@@ -159,7 +159,7 @@ const Courses = () => {
                     top="-1.5rem"
                     boxShadow="lg"
                   >
-                    {feature.icon}
+                    {/* <img src={feature.icon} /> */}
                   </Flex>
                   <chakra.h3 fontWeight="semibold" fontSize="2xl" mt={6}>
                     {feature.heading}

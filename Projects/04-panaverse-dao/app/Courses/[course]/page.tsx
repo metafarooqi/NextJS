@@ -1,5 +1,5 @@
 "use client";
-import CourseBanner from '@/components/CourseBanner';
+
 import { Box, chakra, Divider, Heading, List, ListIcon, ListItem, Tab, TabList, TabPanel, TabPanels, Tabs,Text, useColorModeValue } from '@chakra-ui/react';
 import React, { useState } from 'react'
 import { MdCheckCircle,MdSettings } from "react-icons/md";
