@@ -34,7 +34,7 @@ function course({ params }: {
           {cdata?.title}
         </Heading>
         <Text mt="2" mb="2">
-          {cdata.description}
+          {cdata?.description}
         </Text>
         <Tabs onChange={(index) => setTabIndex(index)} bg={bg}>
           <TabList>
@@ -187,7 +187,7 @@ function course({ params }: {
                 </List>
               </motion.div>
             </TabPanel>
-            {cdata.quarters.map((c) => (
+            {cdata?.quarters.map((c) => (
               <TabPanel key={c.title}>
                 <motion.div
                   initial={{ opacity: 0 }}
