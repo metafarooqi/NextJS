@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Todo from './todo';
 
 const getTodos = async () => {
@@ -12,6 +13,7 @@ async function ToDoList() {
     <>
  
       <div>
+      <Suspense fallback={<div>Loading...</div>}>
     <ul style={{ listStyleType:"none" }}>
     {todos.map((t:any) => {
         return (
@@ -21,6 +23,7 @@ async function ToDoList() {
         );
     })}
      </ul>
+     </Suspense>
   </div>
     </>
   )

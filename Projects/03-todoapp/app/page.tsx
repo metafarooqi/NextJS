@@ -8,6 +8,7 @@ function Home() {
        
        {/* @ts-ignore */}
     <AddTodo />
+    {/* @ts-expect-error Server Component */}
     <ToDoList />
    </div>
   );
