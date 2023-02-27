@@ -91,6 +91,7 @@ export default function Nav() {
                 {Links.map((link) => (
                   <Link
                   as={NextLink}
+                  key={link.url}
                   px={2}
                   py={1}
                   rounded={'md'}
