@@ -33,16 +33,16 @@ function course({ params }: {
         <Heading textAlign="center" mb="4">
           {cdata?.title}
         </Heading>
-        <Text mt="2" mb="2">
+        <Text mt="2" mb="2" textAlign={'justify'}>
           {cdata?.description}
         </Text>
         <Tabs onChange={(index) => setTabIndex(index)} bg={bg}>
           <TabList>
-            <Tab>Quarter I (Core)</Tab>
-            <Tab>Quarter II (Core)</Tab>
-            <Tab>Quarter III (Core)</Tab>
-            <Tab>Quarter-IV</Tab>
-            <Tab>Quarter-V</Tab>
+            <Tab>Q-I (Core)</Tab>
+            <Tab>Q-II (Core)</Tab>
+            <Tab>Q-III (Core)</Tab>
+            <Tab>Q-IV</Tab>
+            <Tab>Q-V</Tab>
           </TabList>
           <TabPanels p="2rem">
             <TabPanel>

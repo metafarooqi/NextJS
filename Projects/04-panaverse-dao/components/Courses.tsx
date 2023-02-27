@@ -111,7 +111,7 @@ const Courses = () => {
         <SimpleGrid
           columns={{ base: 1, sm: 2, md: 3 }}
           placeItems="center"
-          spacing={10}
+          spacing={{base :10,sm:10, md:10}}
           mb={4}
         >
           {features.map((feature, index) => (
